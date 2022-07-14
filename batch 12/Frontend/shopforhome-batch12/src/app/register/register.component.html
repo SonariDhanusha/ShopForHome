@@ -1,0 +1,28 @@
+<section>
+    <form #userform="ngForm" (ngSubmit)="register()" id="form_login">
+      <div *ngIf="!success" class="formclass">
+        <p class="reghead">Registration</p>
+        <div>
+          <input class="inputelement" type="text" name="username" autocomplete="on" required #UsernameControl="ngModel" [(ngModel)]="username" placeholder="Enter the username"><br>
+          <p *ngIf="UsernameControl.touched && UsernameControl.invalid">Username required</p>
+          </div>
+          <div><input class="inputelement" type="Email" name="Email" autocomplete="on" required #EmailControl="ngModel" [(ngModel)]="Email" placeholder="Enter the email"><br>
+            <p *ngIf="EmailControl.touched && EmailControl.invalid">Email required</p></div>
+        <div>
+        <input class="inputelement" type="password" name="password" autocomplete="on" required #passwordControl="ngModel" [(ngModel)]="password" placeholder="Enter the password"><br>
+        <p *ngIf="passwordControl.touched && passwordControl.invalid">Password required</p>
+        </div>
+        <div><input class="inputelement" type="text" name="phone" autocomplete="on" required #phoneControl="ngModel" [(ngModel)]="phone" placeholder="Enter the Phone number"><br>
+          <p *ngIf="phoneControl.touched && phoneControl.invalid">Phone Number required</p></div>
+        <div>
+        <input class="inputelement" type="text" name="address" autocomplete="on" required #addressControl="ngModel" [(ngModel)]="address" placeholder="Enter the address"><br>
+        <p *ngIf="addressControl.touched && addressControl.invalid">Phone Number required</p></div>
+       
+        <p *ngIf="userform.invalid && onClick">Enter the correct credentials</p>
+        <p *ngIf="userexist">UserAlready exists</p>
+        <button [disabled]="!userform.valid" class="btn btn-success" id="just" type="submit">Register</button><br>
+        <p class="nreg"> Already have an account? <a routerLink="/signin">Sign in</a></p>
+      </div>
+    </form>
+    <h2 *ngIf="success" class="logouthead"><button  class="btn btn-primary" (click)="logout()">Logout</button> to register as new user</h2>
+    </section>

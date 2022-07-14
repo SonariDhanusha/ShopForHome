@@ -1,0 +1,89 @@
+.books-head{
+    text-align-last: center;
+    padding-top:10px;
+}
+a:hover img{
+    transform:scale(1.2);
+}
+.gitems{
+    margin:25px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    justify-content: center;;
+    align-items:center;   
+}
+.garden{
+    margin-left:8%;
+    margin-right:8%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap:20px;
+    padding-top:20px
+} 
+section{
+    font-family:sans-serif;
+}
+.loginhead{
+    font-weight:bold;
+    color:#337ab7;
+    text-align:center;
+    padding-top:100px;
+}
+a{
+    color:#337ab7;
+    text-decoration: underline;
+}
+a:hover{
+    color:crimson;
+}
+#addfeature{
+    position:absolute;
+    top:15%;
+    right:5%;
+}
+.itemscart{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+.dropdown{
+    position:absolute;
+    top:24%;
+    left:12%;
+}
+.dropbtn {
+    background-color: #337ab7;
+    color: white;
+    text-align:center;
+    font-size: 12px;
+    font-weight:bold;
+    border-radius:10px;
+    height:30px;
+    width:90px;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+

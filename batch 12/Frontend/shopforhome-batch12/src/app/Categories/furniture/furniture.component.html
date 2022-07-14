@@ -1,0 +1,39 @@
+<div>
+    <h2 class="books-head"><strong>💺Latest Home Furniture🛋️</strong> </h2>
+    <!-- <button id="addfeature" (click)="addmore()" class="btn btn-success">Add More to wishlist</button> -->
+      <div class="furniture">
+      <div class="citems" *ngFor="let b of items">
+        <div class="image-body">
+          <a href="#"><img src="{{b.image}}" alt="image" height="200px" width="200px"></a>
+        </div>
+        <div >
+          <ul>
+            <li> <strong>{{b.pname}}</strong></li>
+            <li> {{b.description}}</li>
+            <li><strong>Price</strong> : Rs. {{b.price}}</li>
+            
+          </ul>
+        </div>
+        <div class="itemscart">
+            <button class="btn btn-primary" type="submit" (click)="cart(b)">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+              <button class="btn btn-primary" type="submit" (click)="wishlist(b)">
+                <i class="bi bi-heart"></i>
+              </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <section *ngFor="let boo of eclipse">
+      <p>{{boo.pname}}</p>
+      <p>{{boo.description}}</p>
+      
+    </section>
+    <div class="dropdown">
+      <button class="dropbtn">Filter By</button>
+      <div class="dropdown-content">
+        <a style="cursor:pointer" (click)="descend()">High to Low price</a>
+        <a  style="cursor:pointer" (click)="ascend()">Low to High price</a>
+      </div>
+    </div>

@@ -1,0 +1,52 @@
+
+.offers{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+.home-images{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    justify-content: center;
+    gap:5px;
+}
+.popular{
+    font-weight:bold;
+    padding:20px 0 25px 60px;
+    
+}
+.goods{
+    margin-left:60px;
+    margin-right:40px;
+    font-weight:bold;
+}
+.inner-popular{
+    display:grid;
+    gap:5px;
+    align-content:flex-start;
+    justify-content: center;
+}
+.goods img:hover{
+    transform:scale(1.8);
+}
+a:hover img{
+    transform:scale(1.2);
+}
+.pitems{
+    margin:25px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    justify-content: center;;
+    align-items:center;   
+}
+.prodts{
+    margin-left:8%;
+    margin-right:8%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap:20px;
+    padding-top:20px
+} 
